@@ -8,13 +8,22 @@ public class retangulo {
 		Scanner sc = new Scanner(System.in);
 		
 		
-		double largura;
+		double largura, altura;
 		
+		// largura //
 		System.out.println("Digite a largura do retangulo: ");
 		largura = sc.nextDouble();
 		while(largura <= 0.0) {
 			System.out.println("O valor deve ser positivo. Tente novamente: ");
 			largura = sc.nextDouble();
+		}
+		
+		// altura //
+		System.out.println("Digite a altura do retangulo: ");
+		altura = sc.nextDouble();
+		while(altura <= 0.0) {
+			System.out.println("O valor deve ser positivo. Tente novamente: ");
+			altura = sc.nextDouble();
 		}
 		
 		sc.close();
